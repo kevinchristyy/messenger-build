@@ -1,9 +1,11 @@
-import Head from "next/head"
-import ChatInput from "../components/chatinput"
-import Header from "../components/header"
-import MessageList from "../components/messagelist"
+import Head from "next/head";
+import ChatInput from "../components/ChatInput";
+import Header from "../components/Header";
+import MessageList from "../components/MessageList";
 
 function Home() {
+ 
+
   return (
     <div>
       <Head>
@@ -12,14 +14,14 @@ function Home() {
       </Head>
 
       <body>
-      <main>
-        <Header />
-        <MessageList />
-        <ChatInput />
-      </main>
+        <main className="bg-black">
+          <Header />
+          <MessageList />
+          <ChatInput />
+        </main>
       </body>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
